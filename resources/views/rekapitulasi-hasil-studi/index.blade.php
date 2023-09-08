@@ -40,7 +40,7 @@
                 </tr>
             </table>
             <div class="overflow-x-auto">
-                <table class="table">
+                <table class="table w-full">
                     <!-- head -->
                     <thead>
                         <tr class="bg-gray-100 font-bold text-black">

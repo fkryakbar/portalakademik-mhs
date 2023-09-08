@@ -16,8 +16,8 @@ class RekapitulasiHasilStudiController extends Controller
         $total_bobot = 0;
         $total_sks = 0;
         foreach ($rekap as $key => $r) {
-            $total_bobot += (int) $r->bobot;
-            $total_sks += (int) $r->mata_kuliah->jumlah_sks;
+            $total_bobot += (float) $r->bobot;
+            $total_sks += (float) $r->mata_kuliah->jumlah_sks;
 
             if ($total_sks > 0) {
                 $ipk = $total_bobot / $total_sks;
