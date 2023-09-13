@@ -30,14 +30,17 @@ Route::middleware(['auth.mhs'])->group(function () {
 
     Route::middleware(['isRegistered'])->prefix('rekapitulasi-hasil-studi')->group(function () {
         Route::get('/', [RekapitulasiHasilStudiController::class, 'index']);
+        Route::get('/cetak', [RekapitulasiHasilStudiController::class, 'cetak']);
     });
 
     Route::middleware(['isRegistered'])->prefix('khs')->group(function () {
         Route::get('/', [KHSController::class, 'index']);
+        Route::get('/cetak/{kode_tahun_ajaran}', [KHSController::class, 'cetak']);
     });
 
     Route::middleware(['isRegistered'])->prefix('krs')->group(function () {
         Route::get('/', [KRSController::class, 'index']);
+        Route::get('/cetak/{kode_tahun_ajaran}', [KRSController::class, 'cetak']);
     });
 
     Route::middleware(['isRegistered'])->prefix('jadwal-perkuliahan')->group(function () {

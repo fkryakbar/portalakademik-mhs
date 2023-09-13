@@ -55,6 +55,23 @@
                     <td class="pl-4">: {{ Auth::user()->biodata->jurusan->nama_jurusan }}</td>
                 </tr>
             </table>
+            <div class="flex justify-end mb-3">
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none flex gap-2">
+                        Cetak
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                        @foreach ($tahun_ajaran as $i => $tahun)
+                            <li><a href="/krs/cetak/{{ $tahun->get_tahun_ajaran->kode_tahun_ajaran }}"
+                                    target="_blank">{{ $tahun->get_tahun_ajaran->nama_tahun_ajaran }}</a></li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
             <div class="overflow-x-auto">
                 <table class="table w-full">
                     <!-- head -->
