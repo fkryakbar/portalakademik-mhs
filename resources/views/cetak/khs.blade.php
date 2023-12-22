@@ -103,7 +103,7 @@
     <div style="position: fixed; right: 0; font-size: 12px">
         <br>
         <br>
-        Mengetahui, ................., {{ $tanggal }}
+        ................., {{ $tanggal }}
         <br>
         <br>
         <br>
@@ -111,7 +111,6 @@
         <br>
         (...........................................)
         <br>
-        NIP.
     </div>
 </body>
 
