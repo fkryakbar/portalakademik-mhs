@@ -65,8 +65,8 @@ Route::get('/logout', function (Request $request) {
 });
 
 
-// Route::get('/run-dev', function () {
-//     $user =  User::where('role', 'mahasiswa')->first();
-//     Auth::login($user);
-//     return redirect('/');
-// });
+Route::get('/run-dev', function () {
+    $user =  User::where('role', 'mahasiswa')->first();
+    Auth::login($user);
+    return redirect('/');
+});

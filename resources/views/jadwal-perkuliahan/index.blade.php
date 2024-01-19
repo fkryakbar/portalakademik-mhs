@@ -44,7 +44,7 @@
                                 <td class="whitespace-nowrap w-[10px]">{{ $i + 1 }}</td>
                                 <td class="whitespace-nowrap w-[10px]">
                                     <p class="bg-blue-500 rounded text-xs p-1 text-white font-bold inline">
-                                        {{ $j->kode_mata_kuliah }}
+                                        {{ $j->mata_kuliah->kode }}
                                     </p>
                                     @if ($j->mata_kuliah)
                                         <div class="w-fit mt-2">
@@ -57,7 +57,13 @@
                                         </div>
                                     @endif
                                 </td>
-                                <td>{{ $j->dosen_ampu }}</td>
+                                <td>
+                                    @foreach ($j->dosen as $d)
+                                        {{ $d->name }}@if (!$loop->last)
+                                            ,
+                                        @endif
+                                    @endforeach
+                                </td>
                                 <td>{{ $j->jadwal }}</td>
                             </tr>
                         @endforeach
