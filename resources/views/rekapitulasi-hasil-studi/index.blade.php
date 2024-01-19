@@ -42,7 +42,7 @@
             @if (count($rekap) > 0)
                 <div class="flex justify-end mb-5">
                     <a href="/rekapitulasi-hasil-studi/cetak" target="_blank"
-                        class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none flex gap-2">
+                        class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none flex gap-2 text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"

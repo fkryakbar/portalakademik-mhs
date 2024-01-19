@@ -57,7 +57,8 @@
             </table>
             <div class="flex justify-end mb-3">
                 <div class="dropdown dropdown-end">
-                    <label tabindex="0" class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none flex gap-2">
+                    <label tabindex="0"
+                        class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none flex gap-2 text-white">
                         Cetak
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
